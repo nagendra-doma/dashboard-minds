@@ -1,0 +1,148 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 210 20% 98%;
+    --foreground: 220 15% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 15% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 15% 20%;
+
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 217 91% 75%;
+
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 220 15% 25%;
+
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 15% 50%;
+
+    --accent: 142 76% 36%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 217 91% 60%;
+
+    /* Dashboard specific colors */
+    --dashboard-bg: 210 20% 98%;
+    --sidebar-bg: 0 0% 100%;
+    --map-border: 214 32% 91%;
+    
+    /* Data visualization colors */
+    --data-red: 0 84% 60%;
+    --data-blue: 217 91% 60%;
+    --data-green: 142 76% 36%;
+    --data-yellow: 45 93% 47%;
+    --data-purple: 262 83% 58%;
+    --data-orange: 25 95% 53%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%), hsl(217 91% 75%));
+    --gradient-accent: linear-gradient(135deg, hsl(142 76% 36%), hsl(142 76% 50%));
+    --gradient-danger: linear-gradient(135deg, hsl(0 84% 60%), hsl(0 84% 70%));
+
+    /* Timeline specific */
+    --timeline-track: 214 32% 91%;
+    --timeline-thumb: 217 91% 60%;
+    --timeline-range: 217 91% 85%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 224 71% 4%;
+    --foreground: 213 31% 91%;
+
+    --card: 224 71% 4%;
+    --card-foreground: 213 31% 91%;
+
+    --popover: 224 71% 4%;
+    --popover-foreground: 213 31% 91%;
+
+    --primary: 217 91% 60%;
+    --primary-foreground: 224 71% 4%;
+    --primary-glow: 217 91% 75%;
+
+    --secondary: 215 28% 17%;
+    --secondary-foreground: 213 31% 91%;
+
+    --muted: 215 28% 17%;
+    --muted-foreground: 217 11% 65%;
+
+    --accent: 142 76% 36%;
+    --accent-foreground: 213 31% 91%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 213 31% 91%;
+
+    --border: 215 28% 17%;
+    --input: 215 28% 17%;
+    --ring: 217 91% 60%;
+
+    /* Dashboard specific colors for dark mode */
+    --dashboard-bg: 224 71% 4%;
+    --sidebar-bg: 215 28% 17%;
+    --map-border: 215 28% 17%;
+    
+    /* Data visualization colors (adjusted for dark mode) */
+    --data-red: 0 84% 60%;
+    --data-blue: 217 91% 60%;
+    --data-green: 142 76% 36%;
+    --data-yellow: 45 93% 47%;
+    --data-purple: 262 83% 58%;
+    --data-orange: 25 95% 53%;
+
+    /* Timeline specific for dark mode */
+    --timeline-track: 215 28% 17%;
+    --timeline-thumb: 217 91% 60%;
+    --timeline-range: 217 91% 25%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
